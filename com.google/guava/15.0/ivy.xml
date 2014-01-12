@@ -33,7 +33,7 @@
 
   <dependencies>
     <!-- dependency maven="com.google.code.findbugs#jsr305" conf="compile,optional" -->
-    <!-- dependency maven="javax.inject#javax.inject" org="javax.inject" name="inject" rev="1.0" conf="compile,optional" -->
+    <!-- dependency maven="javax.inject#javax.inject" org="javax" name="inject" rev="1.0" conf="compile,optional" -->
   </dependencies>
 
 </ivy-module>

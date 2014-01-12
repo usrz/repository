@@ -32,7 +32,7 @@
   </publications>
 
   <dependencies>
-    <dependency org="javax.inject" name="inject" rev="1.0"/> <!-- maven requested="javax.inject#javax.inject#1" -->
+    <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="javax.inject#javax.inject#1" -->
     <dependency org="net.sf.cglib" name="cglib" rev="2.2.2"/> <!-- maven requested="org.sonatype.sisu.inject#cglib#2.2.1-v20090111" mapped="cglib#cglib#2.2.2" -->
     <dependency org="org.aopalliance" name="aopalliance" rev="1.0"/> <!-- maven requested="aopalliance#aopalliance#1.0" -->
 
