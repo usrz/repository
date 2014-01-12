@@ -32,7 +32,7 @@
   </publications>
 
   <dependencies>
-    <dependency org="org.objectweb" name="asm" rev="3.1.1"/> <!-- maven requested="asm#asm#3.3.1" -->
+    <dependency org="org.objectweb" name="asm-all" rev="3.3.1"/> <!-- maven requested="asm#asm#3.3.1" mapped="asm#asm-all#3.3.1" -->
 
     <!-- dependency maven="ant#ant#1.6.2" conf="compile,optional" -->
     <!-- dependency maven="asm#asm-util#3.3.1" conf="compile,optional" -->
