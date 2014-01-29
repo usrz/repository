@@ -6,7 +6,7 @@
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
   <info organisation="org.slf4j"
-        module="slf4j"
+        module="slf4j-api"
         revision="1.7.5"
         publication="20130326055215"
         status="release">
@@ -27,9 +27,9 @@
   </configurations>
 
   <publications>
-    <artifact name="slf4j" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
-    <artifact name="slf4j" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar"/>
-    <artifact name="slf4j" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar"/>
+    <artifact name="slf4j-api" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+    <artifact name="slf4j-api" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar"/>
+    <artifact name="slf4j-api" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar"/>
   </publications>
 
   <dependencies>

@@ -35,7 +35,7 @@
     <!-- dependency maven="avalon-framework#avalon-framework#4.1.5" conf="compile,optional" -->
     <!-- dependency maven="javax.servlet#servlet-api#2.3" conf="provided,optional" -->
     <!-- dependency maven="junit#junit#3.8.1" conf="test" -->
-    <!-- dependency maven="log4j#log4j#1.2.17" conf="compile,optional" -->
+    <!-- dependency maven="log4j#log4j#1.2.17" org="org.apache" name="log4j" rev="1.2.17" conf="compile,optional" -->
     <!-- dependency maven="logkit#logkit#1.0.1" conf="compile,optional" -->
   </dependencies>
 

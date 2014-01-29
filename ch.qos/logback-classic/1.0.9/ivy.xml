@@ -11,11 +11,11 @@
         publication="20121205081516"
         status="release">
 
-    <license name="Eclipse Public License, Version 1.0"
-             url="http://www.eclipse.org/legal/epl-v10.html"/>
     <!-- http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html -->
     <license name="GNU Lesser General Public License"
              url="http://www.gnu.org/licenses/lgpl.txt"/>
+    <license name="Eclipse Public License, Version 1.0"
+             url="http://www.eclipse.org/legal/epl-v10.html"/>
 
     <description homepage="http://logback.qos.ch">
       Logback Classic Module
@@ -36,7 +36,7 @@
 
   <dependencies>
     <dependency org="ch.qos" name="logback-core" rev="1.0.9"/> <!-- maven requested="ch.qos.logback#logback-core" mapped="ch.qos.logback#logback-core#1.0.9" -->
-    <dependency org="org.slf4j" name="slf4j" rev="1.7.5"/> <!-- maven requested="org.slf4j#slf4j-api" mapped="org.slf4j#slf4j-api#1.7.5" -->
+    <dependency org="org.slf4j" name="slf4j-api" rev="1.7.5"/> <!-- maven requested="org.slf4j#slf4j-api" mapped="org.slf4j#slf4j-api#1.7.5" -->
 
     <!-- dependency maven="com.h2database#h2" conf="test" -->
     <!-- dependency maven="com.icegreen#greenmail#1.3" conf="test" -->

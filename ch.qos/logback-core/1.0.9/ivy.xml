@@ -11,11 +11,11 @@
         publication="20121205081430"
         status="release">
 
+    <license name="Eclipse Public License, Version 1.0"
+             url="http://www.eclipse.org/legal/epl-v10.html"/>
     <!-- http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html -->
     <license name="GNU Lesser General Public License"
              url="http://www.gnu.org/licenses/lgpl.txt"/>
-    <license name="Eclipse Public License, Version 1.0"
-             url="http://www.eclipse.org/legal/epl-v10.html"/>
 
     <description homepage="http://logback.qos.ch">
       Logback Core Module
