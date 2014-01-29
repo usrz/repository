@@ -7,8 +7,8 @@
 
   <info organisation="ch.qos"
         module="logback-core"
-        revision="1.0.9"
-        publication="20121205081430"
+        revision="1.0.13"
+        publication="20130510213314"
         status="release">
 
     <license name="Eclipse Public License, Version 1.0"
@@ -21,7 +21,7 @@
       Logback Core Module
     </description>
 
-    <e:maven id="ch.qos.logback#logback-core#1.0.9"/>
+    <e:maven id="ch.qos.logback#logback-core#1.0.13"/>
   </info>
 
   <configurations>
@@ -29,9 +29,9 @@
   </configurations>
 
   <publications>
-    <artifact name="logback-core" type="bin" ext="jar" url="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.9/logback-core-1.0.9.jar"/>
-    <artifact name="logback-core" type="src" ext="zip" url="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.9/logback-core-1.0.9-sources.jar"/>
-    <artifact name="logback-core" type="doc" ext="zip" url="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.9/logback-core-1.0.9-javadoc.jar"/>
+    <artifact name="logback-core" type="bin" ext="jar" url="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar"/>
+    <artifact name="logback-core" type="src" ext="zip" url="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13-sources.jar"/>
+    <artifact name="logback-core" type="doc" ext="zip" url="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13-javadoc.jar"/>
   </publications>
 
   <dependencies>
@@ -43,7 +43,6 @@
     <!-- dependency maven="org.easytesting#fest-assert#1.2" conf="test" -->
     <!-- dependency maven="org.fusesource.jansi#jansi" conf="compile,optional" -->
     <!-- dependency maven="org.mockito#mockito-core#1.9.0" conf="test" -->
-    <!-- dependency maven="org.scala-lang#scala-library" conf="test" -->
   </dependencies>
 
 </ivy-module>
