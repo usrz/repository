@@ -6,7 +6,7 @@
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
   <info organisation="org.apache"
-        module="logj4"
+        module="logj4-api"
         revision="2.0-beta9"
         publication="20130914231658"
         status="release">
@@ -26,9 +26,9 @@
   </configurations>
 
   <publications>
-    <artifact name="logj4" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9.jar"/>
-    <artifact name="logj4" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9-sources.jar"/>
-    <artifact name="logj4" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9-javadoc.jar"/>
+    <artifact name="logj4-api" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9.jar"/>
+    <artifact name="logj4-api" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9-sources.jar"/>
+    <artifact name="logj4-api" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9-javadoc.jar"/>
   </publications>
 
   <dependencies>
