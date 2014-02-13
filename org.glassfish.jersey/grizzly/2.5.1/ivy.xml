@@ -6,7 +6,7 @@
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
   <info organisation="org.glassfish.jersey"
-        module="grizzly2-http"
+        module="grizzly"
         revision="2.5.1"
         publication="20140102215013"
         status="release">
@@ -27,9 +27,9 @@
   </configurations>
 
   <publications>
-    <artifact name="grizzly2-http" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1.jar"/>
-    <artifact name="grizzly2-http" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-sources.jar"/>
-    <artifact name="grizzly2-http" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-javadoc.jar"/>
+    <artifact name="grizzly" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1.jar"/>
+    <artifact name="grizzly" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-sources.jar"/>
+    <artifact name="grizzly" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-javadoc.jar"/>
   </publications>
 
   <dependencies>
