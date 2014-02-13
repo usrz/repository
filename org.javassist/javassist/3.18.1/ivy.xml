@@ -11,14 +11,14 @@
         publication="20130831015932"
         status="release">
 
-    <license name="GNU Lesser General Public License, Version 2.1"
-             url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
     <!-- http://www.mozilla.org/MPL/MPL-1.1.html -->
     <license name="Mozilla Public License, Version 1.1"
              url="http://www.mozilla.org/MPL/1.1/"/>
     <!-- http://www.apache.org/licenses/ -->
     <license name="Apache Software License, Version 2.0"
              url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+    <license name="GNU Lesser General Public License, Version 2.1"
+             url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 
     <description homepage="http://www.javassist.org/">
       Javassist

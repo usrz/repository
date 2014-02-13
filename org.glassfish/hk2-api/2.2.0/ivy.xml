@@ -39,7 +39,7 @@
 
     <!-- dependency maven="junit#junit#4.3.1" conf="test" -->
     <!-- dependency maven="org.easymock#easymock#3.0" conf="test" -->
-    <!-- dependency maven="org.glassfish.hk2#osgi-resource-locator#1.0.1" org="org.glassfish.hk2" name="osgi-locator" rev="1.0.1" conf="compile,optional" -->
+    <!-- dependency maven="org.glassfish.hk2#osgi-resource-locator#1.0.1" org="org.glassfish" name="hk2-osgi-locator" rev="1.0.1" conf="compile,optional" -->
   </dependencies>
 
 </ivy-module>
