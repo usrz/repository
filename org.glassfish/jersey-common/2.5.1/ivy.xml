@@ -5,8 +5,8 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
-  <info organisation="org.glassfish.jersey"
-        module="common"
+  <info organisation="org.glassfish"
+        module="jersey-common"
         revision="2.5.1"
         publication="20140102214332"
         status="release">
@@ -27,9 +27,9 @@
   </configurations>
 
   <publications>
-    <artifact name="common" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.5.1/jersey-common-2.5.1.jar"/>
-    <artifact name="common" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.5.1/jersey-common-2.5.1-sources.jar"/>
-    <artifact name="common" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.5.1/jersey-common-2.5.1-javadoc.jar"/>
+    <artifact name="jersey-common" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.5.1/jersey-common-2.5.1.jar"/>
+    <artifact name="jersey-common" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.5.1/jersey-common-2.5.1-sources.jar"/>
+    <artifact name="jersey-common" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.5.1/jersey-common-2.5.1-javadoc.jar"/>
   </publications>
 
   <dependencies>
@@ -38,9 +38,9 @@
     <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="org.glassfish.hk2.external#javax.inject" mapped="javax.inject#javax.inject#1" -->
     <dependency org="javax" name="ws-rs" rev="2.0"/> <!-- maven requested="javax.ws.rs#javax.ws.rs-api" mapped="javax.ws.rs#javax.ws.rs-api#2.0" -->
     <dependency org="javax" name="xml-bind" rev="2.2.11"/> <!-- maven requested="javax.xml.bind#jaxb-api" mapped="javax.xml.bind#jaxb-api#2.2.11" -->
-    <dependency org="org.glassfish.hk2" name="api" rev="2.1.96"/> <!-- maven requested="org.glassfish.hk2#hk2-api" mapped="org.glassfish.hk2#hk2-api#2.1.96" -->
-    <dependency org="org.glassfish.hk2" name="locator" rev="2.1.96"/> <!-- maven requested="org.glassfish.hk2#hk2-locator" mapped="org.glassfish.hk2#hk2-locator#2.1.96" -->
-    <dependency org="org.glassfish.hk2" name="osgi-locator" rev="1.0.1"/> <!-- maven requested="org.glassfish.hk2#osgi-resource-locator" mapped="org.glassfish.hk2#osgi-resource-locator#1.0.1" -->
+    <dependency org="org.glassfish" name="hk2-osgi-locator" rev="1.0.1"/> <!-- maven requested="org.glassfish.hk2#osgi-resource-locator" mapped="org.glassfish.hk2#osgi-resource-locator#1.0.1" -->
+    <dependency org="org.glassfish" name="hk2-api" rev="2.2.0"/> <!-- maven requested="org.glassfish.hk2#hk2-api" mapped="org.glassfish.hk2#hk2-api#2.2.0" -->
+    <dependency org="org.glassfish" name="hk2-locator" rev="2.2.0"/> <!-- maven requested="org.glassfish.hk2#hk2-locator" mapped="org.glassfish.hk2#hk2-locator#2.2.0" -->
 
     <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->
     <!-- dependency maven="org.hamcrest#hamcrest-library" conf="test" -->

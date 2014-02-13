@@ -5,8 +5,8 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
-  <info organisation="org.glassfish.jersey"
-        module="client"
+  <info organisation="org.glassfish"
+        module="jersey-client"
         revision="2.5.1"
         publication="20140102214410"
         status="release">
@@ -27,18 +27,18 @@
   </configurations>
 
   <publications>
-    <artifact name="client" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.5.1/jersey-client-2.5.1.jar"/>
-    <artifact name="client" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.5.1/jersey-client-2.5.1-sources.jar"/>
-    <artifact name="client" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.5.1/jersey-client-2.5.1-javadoc.jar"/>
+    <artifact name="jersey-client" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.5.1/jersey-client-2.5.1.jar"/>
+    <artifact name="jersey-client" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.5.1/jersey-client-2.5.1-sources.jar"/>
+    <artifact name="jersey-client" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.5.1/jersey-client-2.5.1-javadoc.jar"/>
   </publications>
 
   <dependencies>
     <dependency org="com.google" name="guava" rev="15.0"/> <!-- maven requested="com.google.guava#guava" mapped="com.google.guava#guava#15.0" -->
     <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="org.glassfish.hk2.external#javax.inject" mapped="javax.inject#javax.inject#1" -->
     <dependency org="javax" name="ws-rs" rev="2.0"/> <!-- maven requested="javax.ws.rs#javax.ws.rs-api" mapped="javax.ws.rs#javax.ws.rs-api#2.0" -->
-    <dependency org="org.glassfish.hk2" name="api" rev="2.1.96"/> <!-- maven requested="org.glassfish.hk2#hk2-api" mapped="org.glassfish.hk2#hk2-api#2.1.96" -->
-    <dependency org="org.glassfish.hk2" name="locator" rev="2.1.96"/> <!-- maven requested="org.glassfish.hk2#hk2-locator" mapped="org.glassfish.hk2#hk2-locator#2.1.96" -->
-    <dependency org="org.glassfish.jersey" name="common" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-common#2.5.1" -->
+    <dependency org="org.glassfish" name="hk2-api" rev="2.2.0"/> <!-- maven requested="org.glassfish.hk2#hk2-api" mapped="org.glassfish.hk2#hk2-api#2.2.0" -->
+    <dependency org="org.glassfish" name="jersey-common" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-common#2.5.1" -->
+    <dependency org="org.glassfish" name="hk2-locator" rev="2.2.0"/> <!-- maven requested="org.glassfish.hk2#hk2-locator" mapped="org.glassfish.hk2#hk2-locator#2.2.0" -->
 
     <!-- dependency maven="com.google.code.findbugs#jsr305" conf="provided" -->
     <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->

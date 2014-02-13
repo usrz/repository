@@ -5,8 +5,8 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
-  <info organisation="org.glassfish.jersey"
-        module="grizzly"
+  <info organisation="org.glassfish"
+        module="jersey-grizzly"
         revision="2.5.1"
         publication="20140102215013"
         status="release">
@@ -27,17 +27,17 @@
   </configurations>
 
   <publications>
-    <artifact name="grizzly" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1.jar"/>
-    <artifact name="grizzly" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-sources.jar"/>
-    <artifact name="grizzly" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-javadoc.jar"/>
+    <artifact name="jersey-grizzly" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1.jar"/>
+    <artifact name="jersey-grizzly" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-sources.jar"/>
+    <artifact name="jersey-grizzly" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.5.1/jersey-container-grizzly2-http-2.5.1-javadoc.jar"/>
   </publications>
 
   <dependencies>
     <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="org.glassfish.hk2.external#javax.inject" mapped="javax.inject#javax.inject#1" -->
     <dependency org="javax" name="ws-rs" rev="2.0"/> <!-- maven requested="javax.ws.rs#javax.ws.rs-api" mapped="javax.ws.rs#javax.ws.rs-api#2.0" -->
-    <dependency org="org.glassfish.grizzly" name="http-server" rev="2.3.9"/> <!-- maven requested="org.glassfish.grizzly#grizzly-http-server" mapped="org.glassfish.grizzly#grizzly-http-server#2.3.9" -->
-    <dependency org="org.glassfish.jersey" name="common" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-common#2.5.1" -->
-    <dependency org="org.glassfish.jersey" name="server" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-server#2.5.1" -->
+    <dependency org="org.glassfish" name="jersey-common" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-common#2.5.1" -->
+    <dependency org="org.glassfish" name="jersey-server" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-server#2.5.1" -->
+    <dependency org="org.glassfish" name="grizzly-http-server" rev="2.3.11"/> <!-- maven requested="org.glassfish.grizzly#grizzly-http-server" mapped="org.glassfish.grizzly#grizzly-http-server#2.3.11" -->
 
     <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->
   </dependencies>
