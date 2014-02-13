@@ -5,10 +5,10 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
-  <info organisation="org.glassfish.grizzly"
-        module="framework"
-        revision="2.3.9"
-        publication="20140110143317"
+  <info organisation="org.glassfish"
+        module="grizzly-framework"
+        revision="2.3.11"
+        publication="20140124064919"
         status="release">
 
     <!-- http://glassfish.java.net/public/CDDL+GPL.html -->
@@ -19,7 +19,7 @@
       grizzly-framework
     </description>
 
-    <e:maven id="org.glassfish.grizzly#grizzly-framework#2.3.9"/>
+    <e:maven id="org.glassfish.grizzly#grizzly-framework#2.3.11"/>
   </info>
 
   <configurations>
@@ -27,9 +27,9 @@
   </configurations>
 
   <publications>
-    <artifact name="framework" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-framework/2.3.9/grizzly-framework-2.3.9.jar"/>
-    <artifact name="framework" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-framework/2.3.9/grizzly-framework-2.3.9-sources.jar"/>
-    <artifact name="framework" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-framework/2.3.9/grizzly-framework-2.3.9-javadoc.jar"/>
+    <artifact name="grizzly-framework" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-framework/2.3.11/grizzly-framework-2.3.11.jar"/>
+    <artifact name="grizzly-framework" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-framework/2.3.11/grizzly-framework-2.3.11-sources.jar"/>
+    <artifact name="grizzly-framework" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-framework/2.3.11/grizzly-framework-2.3.11-javadoc.jar"/>
   </publications>
 
   <dependencies>

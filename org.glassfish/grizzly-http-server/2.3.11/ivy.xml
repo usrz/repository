@@ -5,10 +5,10 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
-  <info organisation="org.glassfish.grizzly"
-        module="http-server"
-        revision="2.3.9"
-        publication="20140110143559"
+  <info organisation="org.glassfish"
+        module="grizzly-http-server"
+        revision="2.3.11"
+        publication="20140124065029"
         status="release">
 
     <!-- http://glassfish.java.net/public/CDDL+GPL.html -->
@@ -19,7 +19,7 @@
       grizzly-http-server
     </description>
 
-    <e:maven id="org.glassfish.grizzly#grizzly-http-server#2.3.9"/>
+    <e:maven id="org.glassfish.grizzly#grizzly-http-server#2.3.11"/>
   </info>
 
   <configurations>
@@ -27,13 +27,13 @@
   </configurations>
 
   <publications>
-    <artifact name="http-server" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.9/grizzly-http-server-2.3.9.jar"/>
-    <artifact name="http-server" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.9/grizzly-http-server-2.3.9-sources.jar"/>
-    <artifact name="http-server" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.9/grizzly-http-server-2.3.9-javadoc.jar"/>
+    <artifact name="grizzly-http-server" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.11/grizzly-http-server-2.3.11.jar"/>
+    <artifact name="grizzly-http-server" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.11/grizzly-http-server-2.3.11-sources.jar"/>
+    <artifact name="grizzly-http-server" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.11/grizzly-http-server-2.3.11-javadoc.jar"/>
   </publications>
 
   <dependencies>
-    <dependency org="org.glassfish.grizzly" name="http" rev="2.3.9"/> <!-- maven requested="org.glassfish.grizzly#grizzly-http" mapped="org.glassfish.grizzly#grizzly-http#2.3.9" -->
+    <dependency org="org.glassfish" name="grizzly-http" rev="2.3.11"/> <!-- maven requested="org.glassfish.grizzly#grizzly-http" mapped="org.glassfish.grizzly#grizzly-http#2.3.11" -->
 
     <!-- dependency maven="junit#junit#4.7" conf="test" -->
     <!-- dependency maven="org.glassfish.gmbal#gmbal" conf="provided,optional" -->
