@@ -24,6 +24,7 @@
 
   <configurations>
     <conf name="default"/>
+    <conf name="grizzly"/>
   </configurations>
 
   <publications>
@@ -35,8 +36,9 @@
   <dependencies>
     <dependency org="org.slf4j" name="slf4j-api" rev="1.7.5"/> <!-- maven requested="org.slf4j#slf4j-api#1.7.5" -->
 
-    <!-- Optional dependency manually removed (we can use Grizzly WebSockets) -->
-    <!-- dependency maven="io.netty#netty#3.9.0.Final" org="io.netty" name="netty" rev="3.9.0"/> -->
+    <!-- MANUAL EDIT: In "default" depend on Netty, in "grizzly" depend on Grizzly WebSockets -->
+    <dependency org="io.netty" name="netty" rev="3.9.0" conf="default;!grizzly"/> <!-- maven requested="io.netty#netty#3.9.0.Final" -->
+    <dependency org="org.glassfish" name="grizzly-websockets" rev="latest.release" conf="grizzly"/>
 
     <!-- dependency maven="ch.qos.logback#logback-classic#1.0.13" org="ch.qos" name="logback-classic" rev="1.0.13" conf="test" -->
     <!-- dependency maven="com.google.guava#guava#11.0.2" org="com.google" name="guava" rev="15.0" conf="compile,optional" -->
