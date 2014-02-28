@@ -6,7 +6,7 @@
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
   <info organisation="org.mongodb"
-        module="mongo-java-driver"
+        module="driver"
         revision="2.11.4"
         publication="20140128021736"
         status="release">
@@ -26,9 +26,9 @@
   </configurations>
 
   <publications>
-    <artifact name="mongo-java-driver" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.4/mongo-java-driver-2.11.4.jar"/>
-    <artifact name="mongo-java-driver" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.4/mongo-java-driver-2.11.4-sources.jar"/>
-    <artifact name="mongo-java-driver" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.4/mongo-java-driver-2.11.4-javadoc.jar"/>
+    <artifact name="driver" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.4/mongo-java-driver-2.11.4.jar"/>
+    <artifact name="driver" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.4/mongo-java-driver-2.11.4-sources.jar"/>
+    <artifact name="driver" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.4/mongo-java-driver-2.11.4-javadoc.jar"/>
   </publications>
 
   <dependencies/>
