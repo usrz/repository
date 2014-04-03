@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="javax"
+        module="inject-tck"
+        revision="1.0"
+        publication="20100611203655"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://code.google.com/p/atinject/">
+      javax.inject-tck
+    </description>
+
+    <e:maven id="javax.inject#javax.inject-tck#1"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="inject-tck" type="bin" ext="jar" url="http://repo1.maven.org/maven2/javax/inject/javax.inject-tck/1/javax.inject-tck-1.jar"/>
+    <artifact name="inject-tck" type="src" ext="zip" url="http://repo1.maven.org/maven2/javax/inject/javax.inject-tck/1/javax.inject-tck-1-sources.jar"/>
+    <artifact name="inject-tck" type="doc" ext="zip" url="http://repo1.maven.org/maven2/javax/inject/javax.inject-tck/1/javax.inject-tck-1-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="javax.inject#javax.inject#1" -->
+    <dependency org="org.junit" name="junit" rev="4.11"/> <!-- maven requested="junit#junit#4.7" -->
+  </dependencies>
+
+</ivy-module>
