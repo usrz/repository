@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="javax"
+        module="jsr305"
+        revision="2.0.3"
+        publication="20131231162623"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="https://code.google.com/p/jsr-305/">
+      FindBugs-jsr305
+    </description>
+
+    <e:maven id="com.google.code.findbugs#jsr305#2.0.3"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jsr305" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar"/>
+    <artifact name="jsr305" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3-sources.jar"/>
+    <artifact name="jsr305" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3-javadoc.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>
