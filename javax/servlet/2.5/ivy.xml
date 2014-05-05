@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="javax"
+        module="servlet"
+        revision="2.5"
+        publication="20060717200957"
+        status="release">
+
+    <e:maven id="javax.servlet#servlet-api#2.5"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="servlet" type="bin" ext="jar" url="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+    <artifact name="servlet" type="src" ext="zip" url="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>
