@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.googlecode.objectify"
+        module="objectify"
+        revision="5.0.2"
+        publication="20140421092923"
+        status="release">
+
+    <!-- http://www.opensource.org/licenses/mit-license.php -->
+    <license name="MIT License"
+             url="http://opensource.org/licenses/mit"/>
+
+    <description homepage="http://code.google.com/p/objectify-appengine/">
+      Objectify App Engine
+    </description>
+
+    <e:maven id="com.googlecode.objectify#objectify#5.0.2"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="objectify" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/googlecode/objectify/objectify/5.0.2/objectify-5.0.2.jar"/>
+    <artifact name="objectify" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/googlecode/objectify/objectify/5.0.2/objectify-5.0.2-sources.jar"/>
+    <artifact name="objectify" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/googlecode/objectify/objectify/5.0.2/objectify-5.0.2-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.google" name="guava" rev="16.0.1"/> <!-- maven requested="com.google.guava#guava#14.0.1" mapped="com.google.guava#guava#16.0.1" -->
+
+    <!-- dependency maven="com.fasterxml.jackson.core#jackson-core#2.1.2" org="com.fasterxml" name="jackson-core" rev="2.3.2" conf="compile,optional" -->
+    <!-- dependency maven="com.fasterxml.jackson.core#jackson-databind#2.1.2" org="com.fasterxml" name="jackson-databind" rev="2.3.2" conf="compile,optional" -->
+    <!-- dependency maven="com.google.appengine#appengine-api-1.0-sdk#1.8.3" conf="provided" -->
+    <!-- dependency maven="com.google.appengine#appengine-api-labs#1.8.3" conf="provided" -->
+    <!-- dependency maven="com.google.appengine#appengine-api-stubs#1.8.3" conf="test" -->
+    <!-- dependency maven="com.google.appengine#appengine-testing#1.8.3" conf="test" -->
+    <!-- dependency maven="com.google.gwt#gwt-user#2.5.0" conf="compile,optional" -->
+    <!-- dependency maven="joda-time#joda-time#2.1" org="org.joda" name="time" rev="2.3" conf="compile,optional" -->
+    <!-- dependency maven="org.joda#joda-money#0.6" conf="compile,optional" -->
+    <!-- dependency maven="org.mockito#mockito-core#1.9.5" org="org.mockito" name="mockito" rev="1.9.5" conf="test" -->
+    <!-- dependency maven="org.testng#testng#6.8" org="org.testng" name="testng" rev="6.8.7" conf="test" -->
+  </dependencies>
+
+</ivy-module>
