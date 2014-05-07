@@ -6,7 +6,7 @@
             xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
 
   <info organisation="com.google"
-        module="api-services-admin-directory"
+        module="api-services-directory"
         revision="1.18.0-rc"
         publication="20140430020140"
         status="release">
@@ -26,9 +26,9 @@
   </configurations>
 
   <publications>
-    <artifact name="api-services-admin-directory" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/google/apis/google-api-services-admin-directory/directory_v1-rev33-1.18.0-rc/google-api-services-admin-directory-directory_v1-rev33-1.18.0-rc.jar"/>
-    <artifact name="api-services-admin-directory" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/google/apis/google-api-services-admin-directory/directory_v1-rev33-1.18.0-rc/google-api-services-admin-directory-directory_v1-rev33-1.18.0-rc-sources.jar"/>
-    <artifact name="api-services-admin-directory" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/google/apis/google-api-services-admin-directory/directory_v1-rev33-1.18.0-rc/google-api-services-admin-directory-directory_v1-rev33-1.18.0-rc-javadoc.jar"/>
+    <artifact name="api-services-directory" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/google/apis/google-api-services-admin-directory/directory_v1-rev33-1.18.0-rc/google-api-services-admin-directory-directory_v1-rev33-1.18.0-rc.jar"/>
+    <artifact name="api-services-directory" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/google/apis/google-api-services-admin-directory/directory_v1-rev33-1.18.0-rc/google-api-services-admin-directory-directory_v1-rev33-1.18.0-rc-sources.jar"/>
+    <artifact name="api-services-directory" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/google/apis/google-api-services-admin-directory/directory_v1-rev33-1.18.0-rc/google-api-services-admin-directory-directory_v1-rev33-1.18.0-rc-javadoc.jar"/>
   </publications>
 
   <dependencies>
