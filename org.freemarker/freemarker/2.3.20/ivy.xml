@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.freemarker"
+        module="freemarker"
+        revision="2.3.20"
+        publication="20130629084036"
+        status="release">
+
+    <license name="FreeMarker.ORG License"
+             url="http://freemarker.org/LICENSE.txt"/>
+
+    <description homepage="http://freemarker.org/">
+      FreeMarker
+    </description>
+
+    <e:maven id="org.freemarker#freemarker#2.3.20"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="freemarker" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/freemarker/freemarker/2.3.20/freemarker-2.3.20.jar"/>
+    <artifact name="freemarker" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/freemarker/freemarker/2.3.20/freemarker-2.3.20-sources.jar"/>
+    <artifact name="freemarker" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/freemarker/freemarker/2.3.20/freemarker-2.3.20-javadoc.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>
