@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.glassfish"
+        module="grizzly-http-server"
+        revision="2.3.12"
+        publication="20140501125306"
+        status="release">
+
+    <!-- http://glassfish.java.net/public/CDDL+GPL.html -->
+    <license name="Common Development and Distribution License, Version 1.0 (with &quot;classpath&quot; GPL exception)"
+             url="https://glassfish.java.net/public/CDDL+GPL.html"/>
+
+    <description homepage="http://grizzly.java.net">
+      grizzly-http-server
+    </description>
+
+    <e:maven id="org.glassfish.grizzly#grizzly-http-server#2.3.12"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="grizzly-http-server" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.12/grizzly-http-server-2.3.12.jar"/>
+    <artifact name="grizzly-http-server" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.12/grizzly-http-server-2.3.12-sources.jar"/>
+    <artifact name="grizzly-http-server" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/grizzly/grizzly-http-server/2.3.12/grizzly-http-server-2.3.12-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.glassfish" name="grizzly-http" rev="2.3.12"/> <!-- maven requested="org.glassfish.grizzly#grizzly-http" mapped="org.glassfish.grizzly#grizzly-http#2.3.12" -->
+
+    <!-- dependency maven="junit#junit#4.7" conf="test" -->
+    <!-- dependency maven="org.glassfish.gmbal#gmbal" conf="provided,optional" -->
+    <!-- dependency maven="org.glassfish.gmbal#gmbal-api-only" conf="provided,optional" -->
+    <!-- dependency maven="org.mockito#mockito-all#1.9.5" conf="test" -->
+  </dependencies>
+
+</ivy-module>
