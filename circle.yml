@@ -1,7 +1,8 @@
+test:
+  override:
+    - find . -type f -name ivy.xml | xargs xmllint --noout --schema http://ant.apache.org/ivy/schemas/ivy.xsd
 deployment:
   master:
     branch: master
     commands:
-      - git config user.email "builds@circleci.com"
-      - git config user.name "CircleCI Buil Agent"
-      - ssh -t dev.usrz.com /bin/bash -c '"cd /var/www/libraries ; git pull"'
+      - ssh circleci@dev.usrz.com update libraries
