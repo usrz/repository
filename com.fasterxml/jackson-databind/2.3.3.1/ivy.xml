@@ -29,7 +29,7 @@
 
   <publications>
     <artifact name="jackson-databind" type="bin" ext="jar"/>
-    <artifact name="jackson-databind" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-sources.jar"/>
+    <artifact name="jackson-databind" type="src" ext="zip"/>
     <artifact name="jackson-databind" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3-javadoc.jar"/>
   </publications>
 
