@@ -7,8 +7,8 @@
 
   <info organisation="com.fasterxml"
         module="jackson-guice"
-        revision="2.3.3.2"
-        publication="20140528093857"
+        revision="2.3.3-1"
+        publication="20140526085410"
         status="release">
 
     <license name="GNU Lesser General Public License, Version 2.1"

@@ -7,7 +7,7 @@
 
   <info organisation="com.fasterxml"
         module="jackson-databind"
-        revision="2.3.3.1"
+        revision="2.3.3-1"
         publication="20140526071352"
         status="release">
 
