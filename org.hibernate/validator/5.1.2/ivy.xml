@@ -35,6 +35,7 @@
     <dependency org="com.fasterxml" name="classmate" rev="1.0.0"/> <!-- maven requested="com.fasterxml#classmate" mapped="com.fasterxml#classmate#1.0.0" -->
     <dependency org="javax" name="validation" rev="1.1.0"/> <!-- maven requested="javax.validation#validation-api" mapped="javax.validation#validation-api#1.1.0.Final" -->
     <dependency org="org.jboss" name="logging" rev="3.1.4"/> <!-- maven requested="org.jboss.logging#jboss-logging" mapped="org.jboss.logging#jboss-logging#3.1.4.GA" -->
+    <dependency org="org.glassfish" name="web-el" rev="2.2.6"/> <!-- manual dependency -->
 
     <!-- dependency maven="com.thoughtworks.paranamer#paranamer" org="com.thoughtworks" name="paranamer" rev="2.6" conf="compile,optional" -->
     <!-- dependency maven="javax.el#javax.el-api" conf="provided" -->
