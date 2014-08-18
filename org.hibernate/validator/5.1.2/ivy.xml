@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.hibernate"
+        module="validator"
+        revision="5.1.2"
+        publication="20140725190443"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://validator.hibernate.org">
+      Hibernate Validator Engine
+    </description>
+
+    <e:maven id="org.hibernate#hibernate-validator#5.1.2.Final"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="validator" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.2.Final/hibernate-validator-5.1.2.Final.jar"/>
+    <artifact name="validator" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.2.Final/hibernate-validator-5.1.2.Final-sources.jar"/>
+    <artifact name="validator" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.2.Final/hibernate-validator-5.1.2.Final-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.fasterxml" name="classmate" rev="1.0.0"/> <!-- maven requested="com.fasterxml#classmate" mapped="com.fasterxml#classmate#1.0.0" -->
+    <dependency org="javax" name="validation" rev="1.1.0"/> <!-- maven requested="javax.validation#validation-api" mapped="javax.validation#validation-api#1.1.0.Final" -->
+    <dependency org="org.jboss" name="logging" rev="3.1.4"/> <!-- maven requested="org.jboss.logging#jboss-logging" mapped="org.jboss.logging#jboss-logging#3.1.4.GA" -->
+
+    <!-- dependency maven="com.thoughtworks.paranamer#paranamer" org="com.thoughtworks" name="paranamer" rev="2.6" conf="compile,optional" -->
+    <!-- dependency maven="javax.el#javax.el-api" conf="provided" -->
+    <!-- dependency maven="joda-time#joda-time" org="org.joda" name="time" rev="2.3" conf="compile,optional" -->
+    <!-- dependency maven="log4j#log4j" org="org.apache" name="log4j" rev="1.2.17" conf="test" -->
+    <!-- dependency maven="org.codehaus.groovy#groovy-jsr223" conf="test" -->
+    <!-- dependency maven="org.easymock#easymock" conf="test" -->
+    <!-- dependency maven="org.easytesting#fest-assert" conf="test" -->
+    <!-- dependency maven="org.glassfish.web#javax.el" conf="provided" -->
+    <!-- dependency maven="org.hibernate.javax.persistence#hibernate-jpa-2.1-api" conf="compile,optional" -->
+    <!-- dependency maven="org.jsoup#jsoup" conf="compile,optional" -->
+    <!-- dependency maven="org.testng#testng" org="org.testng" name="testng" rev="6.8.8" conf="test" -->
+  </dependencies>
+
+</ivy-module>
