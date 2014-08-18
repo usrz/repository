@@ -5,4 +5,4 @@ deployment:
   master:
     branch: master
     commands:
-      - ssh circleci@dev.usrz.com update libraries
+      - ssh circleci@gw.usrz.com update libraries
