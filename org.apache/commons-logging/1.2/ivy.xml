@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.apache"
+        module="commons-logging"
+        revision="1.2"
+        publication="20140706031228"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://commons.apache.org/proper/commons-logging/">
+      Apache Commons Logging
+    </description>
+
+    <e:maven id="commons-logging#commons-logging#1.2"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="commons-logging" type="bin" ext="jar" url="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+    <artifact name="commons-logging" type="src" ext="zip" url="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"/>
+    <artifact name="commons-logging" type="doc" ext="zip" url="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <!-- dependency maven="avalon-framework#avalon-framework#4.1.5" conf="compile,optional" -->
+    <!-- dependency maven="javax.servlet#servlet-api#2.3" org="javax" name="servlet" rev="2.5" conf="provided,optional" -->
+    <!-- dependency maven="junit#junit#3.8.1" org="org.junit" name="junit" rev="4.11" conf="test" -->
+    <!-- dependency maven="log4j#log4j#1.2.17" org="org.apache" name="log4j" rev="1.2.17" conf="compile,optional" -->
+    <!-- dependency maven="logkit#logkit#1.0.1" conf="compile,optional" -->
+  </dependencies>
+
+</ivy-module>
