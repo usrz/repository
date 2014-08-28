@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.thoughtworks"
+        module="paranamer"
+        revision="2.7"
+        publication="20140817052110"
+        status="release">
+
+    <!-- LICENSE.txt -->
+    <license name="BSD 3-Clause License"
+             url="http://opensource.org/licenses/bsd-3-clause"/>
+
+    <description homepage="http://paranamer.codehaus.org">
+      ParaNamer Core
+    </description>
+
+    <e:maven id="com.thoughtworks.paranamer#paranamer#2.7"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="paranamer" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.jar"/>
+    <artifact name="paranamer" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7-sources.jar"/>
+    <artifact name="paranamer" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <!-- dependency maven="com.thoughtworks.paranamer#paranamer#2.5.5" org="com.thoughtworks" name="paranamer" rev="2.6" conf="test" -->
+    <!-- dependency maven="javax.inject#javax.inject#1" org="javax" name="inject" rev="1.0" conf="compile,optional" -->
+    <!-- dependency maven="junit#junit#4.10" org="org.junit" name="junit" rev="4.11" conf="test" -->
+    <!-- dependency maven="net.sourceforge.f2j#arpack_combined_all#0.1" conf="test" -->
+    <!-- dependency maven="org.mockito#mockito-all#1.9.0" conf="test" -->
+  </dependencies>
+
+</ivy-module>
