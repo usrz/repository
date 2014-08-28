@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.fasterxml"
+        module="jackson-jaxrs-provider"
+        revision="2.4.2"
+        publication="20140816104551"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://wiki.fasterxml.com/JacksonHome">
+      Jackson-JAXRS-JSON
+    </description>
+
+    <e:maven id="com.fasterxml.jackson.jaxrs#jackson-jaxrs-json-provider#2.4.2"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jackson-jaxrs-provider" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.4.2/jackson-jaxrs-json-provider-2.4.2.jar"/>
+    <artifact name="jackson-jaxrs-provider" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.4.2/jackson-jaxrs-json-provider-2.4.2-sources.jar"/>
+    <artifact name="jackson-jaxrs-provider" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.4.2/jackson-jaxrs-json-provider-2.4.2-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.fasterxml" name="jackson-jaxb-annotations" rev="2.4.2"/> <!-- maven requested="com.fasterxml.jackson.module#jackson-module-jaxb-annotations#2.4.2" -->
+    <dependency org="com.fasterxml" name="jackson-jaxrs-base" rev="2.4.2"/> <!-- maven requested="com.fasterxml.jackson.jaxrs#jackson-jaxrs-base#2.4.2" -->
+    <dependency org="com.fasterxml" name="jackson-core" rev="2.4.2"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-core#2.4.2" -->
+    <dependency org="com.fasterxml" name="jackson-databind" rev="2.4.2"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-databind#2.4.2" -->
+
+    <!-- dependency maven="com.sun.jersey#jersey-core#1.17.1" conf="test" -->
+    <!-- dependency maven="com.sun.jersey#jersey-server#1.17.1" conf="test" -->
+    <!-- dependency maven="com.sun.jersey#jersey-servlet#1.17.1" conf="test" -->
+    <!-- dependency maven="javax.ws.rs#jsr311-api#1.1.1" conf="provided" -->
+    <!-- dependency maven="junit#junit#4.8.2" conf="test" -->
+    <!-- dependency maven="org.eclipse.jetty#jetty-server#8.1.10.v20130312" conf="test" -->
+    <!-- dependency maven="org.eclipse.jetty#jetty-servlet#8.1.10.v20130312" conf="test" -->
+    <!-- dependency maven="org.jboss.resteasy#resteasy-jackson2-provider#3.0.6.Final" conf="test" -->
+  </dependencies>
+
+</ivy-module>
