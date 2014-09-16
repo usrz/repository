@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.beust"
+        module="jcommander"
+        revision="1.35"
+        publication="20140223023010"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://beust.com/jcommander">
+      JCommander
+    </description>
+
+    <e:maven id="com.beust#jcommander#1.35"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jcommander" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/beust/jcommander/1.35/jcommander-1.35.jar"/>
+    <artifact name="jcommander" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/beust/jcommander/1.35/jcommander-1.35-sources.jar"/>
+    <artifact name="jcommander" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/beust/jcommander/1.35/jcommander-1.35-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <!-- dependency maven="org.testng#testng#6.1.1" org="org.testng" name="testng" rev="6.8.8" conf="test" -->
+  </dependencies>
+
+</ivy-module>

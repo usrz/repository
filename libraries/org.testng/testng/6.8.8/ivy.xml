@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.testng"
+        module="testng"
+        revision="6.8.8"
+        publication="20140223023854"
+        status="release">
+
+    <!-- http://apache.org/licenses/LICENSE-2.0 -->
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://testng.org">
+      TestNG
+    </description>
+
+    <e:maven id="org.testng#testng#6.8.8"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="testng" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/testng/testng/6.8.8/testng-6.8.8.jar"/>
+    <artifact name="testng" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/testng/testng/6.8.8/testng-6.8.8-sources.jar"/>
+    <artifact name="testng" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/testng/testng/6.8.8/testng-6.8.8-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.beust" name="jcommander" rev="1.32"/> <!-- maven requested="com.beust#jcommander#1.27" mapped="com.beust#jcommander#1.32" -->
+    <dependency org="org.beanshell" name="bsh" rev="2.0.5"/> <!-- maven requested="org.beanshell#bsh#2.0b4" mapped="org.beanshell#bsh#2.0b5" -->
+
+    <!-- dependency maven="com.google.inject#guice#2.0" org="com.google" name="guice" rev="4.0-beta4" conf="provided" -->
+    <!-- dependency maven="junit#junit#4.10" org="org.junit" name="junit" rev="4.11" conf="compile,optional" -->
+    <!-- dependency maven="org.apache.ant#ant#1.7.0" conf="compile,optional" -->
+    <!-- dependency maven="org.yaml#snakeyaml#1.12" org="org.yaml" name="snakeyaml" rev="1.13" conf="compile,optional" -->
+  </dependencies>
+
+</ivy-module>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.google"
+        module="oauth-client"
+        revision="1.19.0"
+        publication="20140722040131"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://code.google.com/p/google-oauth-java-client/">
+      Google OAuth Client Library for Java
+    </description>
+
+    <e:maven id="com.google.oauth-client#google-oauth-client#1.19.0"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="oauth-client" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/google/oauth-client/google-oauth-client/1.19.0/google-oauth-client-1.19.0.jar"/>
+    <artifact name="oauth-client" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/google/oauth-client/google-oauth-client/1.19.0/google-oauth-client-1.19.0-sources.jar"/>
+    <artifact name="oauth-client" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/google/oauth-client/google-oauth-client/1.19.0/google-oauth-client-1.19.0-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.google" name="http-client" rev="1.19.0"/> <!-- maven requested="com.google.http-client#google-http-client" mapped="com.google.http-client#google-http-client#1.19.0" -->
+    <dependency org="javax" name="jsr305" rev="3.0.0"/> <!-- maven requested="com.google.code.findbugs#jsr305" mapped="com.google.code.findbugs#jsr305#3.0.0" -->
+
+    <!-- dependency maven="com.google.guava#guava-jdk5" org="com.google" name="guava" rev="18.0" conf="test" -->
+    <!-- dependency maven="com.google.http-client#google-http-client-jackson" conf="test" -->
+    <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->
+  </dependencies>
+
+</ivy-module>

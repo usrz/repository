@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.glassfish"
+        module="jersey-server"
+        revision="2.5.1"
+        publication="20140102214459"
+        status="release">
+
+    <!-- http://glassfish.java.net/public/CDDL+GPL_1_1.html -->
+    <license name="Common Development and Distribution License, Version 1.1 (with &quot;classpath&quot; GPL exception)"
+             url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+
+    <description homepage="https://jersey.java.net/">
+      jersey-core-server
+    </description>
+
+    <e:maven id="org.glassfish.jersey.core#jersey-server#2.5.1"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jersey-server" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.5.1/jersey-server-2.5.1.jar"/>
+    <artifact name="jersey-server" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.5.1/jersey-server-2.5.1-sources.jar"/>
+    <artifact name="jersey-server" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.5.1/jersey-server-2.5.1-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.google" name="guava" rev="15.0"/> <!-- maven requested="com.google.guava#guava" mapped="com.google.guava#guava#15.0" -->
+    <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="org.glassfish.hk2.external#javax.inject" mapped="javax.inject#javax.inject#1" -->
+    <dependency org="javax" name="ws-rs" rev="2.0"/> <!-- maven requested="javax.ws.rs#javax.ws.rs-api" mapped="javax.ws.rs#javax.ws.rs-api#2.0" -->
+    <dependency org="javax" name="validation" rev="1.1.0"/> <!-- maven requested="javax.validation#validation-api" mapped="javax.validation#validation-api#1.1.0.Final" -->
+    <dependency org="org.glassfish" name="hk2-api" rev="2.2.0"/> <!-- maven requested="org.glassfish.hk2#hk2-api" mapped="org.glassfish.hk2#hk2-api#2.2.0" -->
+    <dependency org="org.glassfish" name="jersey-client" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-client#2.5.1" -->
+    <dependency org="org.glassfish" name="jersey-common" rev="2.5.1"/> <!-- maven requested="org.glassfish.jersey.core#jersey-common#2.5.1" -->
+    <dependency org="org.glassfish" name="hk2-locator" rev="2.2.0"/> <!-- maven requested="org.glassfish.hk2#hk2-locator" mapped="org.glassfish.hk2#hk2-locator#2.2.0" -->
+
+    <!-- dependency maven="com.google.code.findbugs#jsr305" conf="provided" -->
+    <!-- dependency maven="javax.annotation#javax.annotation-api" org="javax" name="annotation" rev="1.2" conf="provided" -->
+    <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->
+  </dependencies>
+
+</ivy-module>

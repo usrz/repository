@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.google"
+        module="api-client-xml"
+        revision="1.19.0"
+        publication="20140722040549"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://code.google.com/p/google-api-java-client/">
+      XML extensions to the Google APIs Client Library for Java
+    </description>
+
+    <e:maven id="com.google.api-client#google-api-client-xml#1.19.0"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="api-client-xml" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/google/api-client/google-api-client-xml/1.19.0/google-api-client-xml-1.19.0.jar"/>
+    <artifact name="api-client-xml" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/google/api-client/google-api-client-xml/1.19.0/google-api-client-xml-1.19.0-sources.jar"/>
+    <artifact name="api-client-xml" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/google/api-client/google-api-client-xml/1.19.0/google-api-client-xml-1.19.0-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.google" name="api-client" rev="1.19.0"/> <!-- maven requested="com.google.api-client#google-api-client" mapped="com.google.api-client#google-api-client#1.19.0" -->
+    <dependency org="com.google" name="http-client-xml" rev="1.19.0"/> <!-- maven requested="com.google.http-client#google-http-client-xml" mapped="com.google.http-client#google-http-client-xml#1.19.0" -->
+
+    <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->
+  </dependencies>
+
+</ivy-module>

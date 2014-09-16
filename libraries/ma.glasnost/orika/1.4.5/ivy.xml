@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="ma.glasnost"
+        module="orika"
+        revision="1.4.5"
+        publication="20140315050657"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://code.google.com/p/orika">
+      Orika - core
+    </description>
+
+    <e:maven id="ma.glasnost.orika#orika-core#1.4.5"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="orika" type="bin" ext="jar" url="http://repo1.maven.org/maven2/ma/glasnost/orika/orika-core/1.4.5/orika-core-1.4.5.jar"/>
+    <artifact name="orika" type="src" ext="zip" url="http://repo1.maven.org/maven2/ma/glasnost/orika/orika-core/1.4.5/orika-core-1.4.5-sources.jar"/>
+    <artifact name="orika" type="doc" ext="zip" url="http://repo1.maven.org/maven2/ma/glasnost/orika/orika-core/1.4.5/orika-core-1.4.5-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.carrotsearch" name="java-sizeof" rev="0.0.4"/> <!-- maven requested="com.carrotsearch#java-sizeof" mapped="com.carrotsearch#java-sizeof#0.0.4" -->
+    <dependency org="com.googlecode" name="concurrentlinkedhashmap-lru" rev="1.4"/> <!-- maven requested="com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru" mapped="com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru#1.4" -->
+    <dependency org="com.thoughtworks" name="paranamer" rev="2.6"/> <!-- maven requested="com.thoughtworks.paranamer#paranamer" mapped="com.thoughtworks.paranamer#paranamer#2.6" -->
+    <dependency org="org.javassist" name="javassist" rev="3.18.1"/> <!-- maven requested="org.javassist#javassist" mapped="org.javassist#javassist#3.18.1-GA" -->
+    <dependency org="org.slf4j" name="slf4j-api" rev="1.7.5"/> <!-- maven requested="org.slf4j#slf4j-api" mapped="org.slf4j#slf4j-api#1.7.5" -->
+  </dependencies>
+
+</ivy-module>

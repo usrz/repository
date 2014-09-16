@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.javassist"
+        module="javassist"
+        revision="3.18.1"
+        publication="20130831015932"
+        status="release">
+
+    <!-- http://www.mozilla.org/MPL/MPL-1.1.html -->
+    <license name="Mozilla Public License, Version 1.1"
+             url="http://www.mozilla.org/MPL/1.1/"/>
+    <!-- http://www.apache.org/licenses/ -->
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+    <license name="GNU Lesser General Public License, Version 2.1"
+             url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+
+    <description homepage="http://www.javassist.org/">
+      Javassist
+    </description>
+
+    <e:maven id="org.javassist#javassist#3.18.1-GA"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="javassist" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar"/>
+    <artifact name="javassist" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar"/>
+    <artifact name="javassist" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <!-- dependency maven="junit#junit#3.8.1" conf="test" -->
+  </dependencies>
+
+</ivy-module>

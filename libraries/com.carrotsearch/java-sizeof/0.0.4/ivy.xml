@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.carrotsearch"
+        module="java-sizeof"
+        revision="0.0.4"
+        publication="20130705174530"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://nexus.sonatype.org/oss-repository-hosting.html">
+      java-sizeof
+    </description>
+
+    <e:maven id="com.carrotsearch#java-sizeof#0.0.4"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="java-sizeof" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/carrotsearch/java-sizeof/0.0.4/java-sizeof-0.0.4.jar"/>
+    <artifact name="java-sizeof" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/carrotsearch/java-sizeof/0.0.4/java-sizeof-0.0.4-sources.jar"/>
+    <artifact name="java-sizeof" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/carrotsearch/java-sizeof/0.0.4/java-sizeof-0.0.4-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <!-- dependency maven="com.carrotsearch#junit-benchmarks#0.3.0" conf="test" -->
+    <!-- dependency maven="junit#junit#4.10" org="org.junit" name="junit" rev="4.11" conf="test" -->
+  </dependencies>
+
+</ivy-module>

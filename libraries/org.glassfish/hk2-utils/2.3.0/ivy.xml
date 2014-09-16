@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.glassfish"
+        module="hk2-utils"
+        revision="2.3.0"
+        publication="20140807215908"
+        status="release">
+
+    <!-- https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html -->
+    <license name="Common Development and Distribution License, Version 1.1 (with &quot;classpath&quot; GPL exception)"
+             url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+
+    <description homepage="https://hk2.java.net">
+      HK2 Implementation Utilities
+    </description>
+
+    <e:maven id="org.glassfish.hk2#hk2-utils#2.3.0"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="hk2-utils" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.3.0/hk2-utils-2.3.0.jar"/>
+    <artifact name="hk2-utils" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.3.0/hk2-utils-2.3.0-sources.jar"/>
+    <artifact name="hk2-utils" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.3.0/hk2-utils-2.3.0-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="javax" name="inject" rev="1.0"/> <!-- maven requested="javax.inject#javax.inject" mapped="javax.inject#javax.inject#1" -->
+
+    <!-- dependency maven="junit#junit" org="org.junit" name="junit" rev="4.11" conf="test" -->
+    <!-- dependency maven="org.easymock#easymock" conf="test" -->
+  </dependencies>
+
+</ivy-module>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.fasterxml"
+        module="jackson-core"
+        revision="2.3.3"
+        publication="20140411014708"
+        status="release">
+
+    <license name="GNU Lesser General Public License, Version 2.1"
+             url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://wiki.fasterxml.com/JacksonHome">
+      Jackson-core
+    </description>
+
+    <e:maven id="com.fasterxml.jackson.core#jackson-core#2.3.3"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jackson-core" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3.jar"/>
+    <artifact name="jackson-core" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3-sources.jar"/>
+    <artifact name="jackson-core" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.3/jackson-core-2.3.3-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <!-- dependency maven="junit#junit#4.8.2" conf="test" -->
+  </dependencies>
+
+</ivy-module>
