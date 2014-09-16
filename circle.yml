@@ -1,0 +1,8 @@
+test:
+  override:
+    - bash verify_ivy.sh
+deployment:
+  master:
+    branch: master
+    commands:
+      - bash make_indexes.sh
