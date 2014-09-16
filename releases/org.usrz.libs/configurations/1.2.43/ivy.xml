@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="configurations" revision="1.2.43" status="release" publication="20140916160407"/>
+<configurations>
+<conf name="default" visibility="public"/>
+</configurations>
+<publications>
+<artifact name="configurations" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-configurations/releases/download/1.2.43/classes-1.2.43.jar"/>
+<artifact name="configurations" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-configurations/releases/download/1.2.43/sources-1.2.43.zip"/>
+<artifact name="configurations" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-configurations/releases/download/1.2.43/javadoc-1.2.43.zip"/>
+</publications>
+<dependencies>
+<dependency org="org.usrz.libs" name="logging" rev="1.1.50" revConstraint="latest.release" conf="default"/>
+</dependencies>
+</ivy-module>
