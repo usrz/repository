@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+
+  <info organisation="org.usrz.libs" module="configurations" revision="1.2.112" status="release" publication="20140916202942"/>
+
+  <configurations>
+    <conf name="default" visibility="public"/>
+    
+    
+  </configurations>
+
+  <publications>
+      <artifact name="configurations" type="bin" ext="jar" conf="default" url="https://github.com/pfumagalli/playpen/releases/download/1.2.112/org.usrz.libs-configurations-1.2.112-bin.jar"/>
+      <artifact name="configurations" type="src" ext="zip" conf="default" url="https://github.com/pfumagalli/playpen/releases/download/1.2.112/org.usrz.libs-configurations-1.2.112-src.zip"/>
+      <artifact name="configurations" type="doc" ext="zip" conf="default" url="https://github.com/pfumagalli/playpen/releases/download/1.2.112/org.usrz.libs-configurations-1.2.112-doc.zip"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.usrz.libs" name="logging" rev="1.1.38" revConstraint="latest.release" conf="default"/>
+    
+  </dependencies>
+
+</ivy-module>
