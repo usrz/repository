@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.bouncycastle"
+        module="bcprov"
+        revision="1.51"
+        publication="20140728105910"
+        status="release">
+
+    <!-- http://www.bouncycastle.org/licence.html -->
+    <license name="MIT License"
+             url="http://opensource.org/licenses/mit"/>
+
+    <description homepage="http://www.bouncycastle.org/java.html">
+      Bouncy Castle Provider
+    </description>
+
+    <e:maven id="org.bouncycastle#bcprov-jdk15on#1.51"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="bcprov" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51.jar"/>
+    <artifact name="bcprov" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51-sources.jar"/>
+    <artifact name="bcprov" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51-javadoc.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>

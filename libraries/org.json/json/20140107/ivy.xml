@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.json"
+        module="json"
+        revision="20140107"
+        publication="20140108033602"
+        status="release">
+
+    <!-- http://json.org/license.html -->
+    <license name="JSON License"
+             url="http://www.json.org/license.html"/>
+
+    <description homepage="https://github.com/douglascrockford/JSON-java">
+      JSON in Java
+    </description>
+
+    <e:maven id="org.json#json#20140107"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="json" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar"/>
+    <artifact name="json" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107-sources.jar"/>
+    <artifact name="json" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107-javadoc.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>
