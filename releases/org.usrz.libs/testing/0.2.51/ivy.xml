@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="testing" revision="0.2.51" status="release" publication="20140916154047"/>
+<configurations>
+<conf name="default" visibility="public"/>
+<conf name="logging" visibility="public" extends="default"/>
+</configurations>
+<publications>
+<artifact name="testing" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-testing/releases/download/0.2.51/classes-0.2.51.jar"/>
+<artifact name="testing" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-testing/releases/download/0.2.51/sources-0.2.51.zip"/>
+<artifact name="testing" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-testing/releases/download/0.2.51/javadoc-0.2.51.zip"/>
+</publications>
+<dependencies>
+<dependency org="org.testng" name="testng" rev="6.8.8" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="logging" rev="1.1.50" revConstraint="latest.release" conf="logging-&gt;default"/>
+<dependency org="ch.qos" name="logback-classic" rev="1.1.2" revConstraint="latest.release" conf="logging-&gt;default"/>
+</dependencies>
+</ivy-module>
