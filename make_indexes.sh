@@ -2,13 +2,26 @@
 
 git config user.email "builds@circleci.com" || exit 1
 git config user.name "CircleCI Buil Agent" || exit 1
+
+echo ""
+echo "Checking out gh-pages and merging:"
+echo ""
 git checkout "gh-pages" || exit 1
 git merge "master" -m "Building new indexes" || exit 1
 
 OLD_DIR=`pwd`;
 for DIR in releases libraries ; do
-  find "${DIR}" -type f -name index.html -delete
+  echo ""
+  echo "Processing directory \"${DIR}\""
+  echo ""
+  echo "Deleting files:"
+  echo ""
+  find "${DIR}" -type f -name index.html -print -delete
+  echo ""
+  echo "Creating files:"
+  echo ""
   find "${DIR}" -type d | while read NEW_DIR ; do
+    echo "${DIR}/${NEW_DIR}"
     cd "${NEW_DIR}"
     {
       echo "<!DOCTYPE html>"
@@ -38,10 +51,19 @@ for DIR in releases libraries ; do
     } > index.html
     cd "${OLD_DIR}"
   done
-  git add "${DIR}" || exit 1
+  echo ""
+  echo "Adding to git:"
+  echo ""
+  git add --verbose "${DIR}" || exit 1
 done
 
-git commit --allow-empty -a -m "Built new indexes" || exit 1
+echo ""
+echo "Committing:"
+echo ""
+git commit --verbose --allow-empty -a -m "Built new indexes" || exit 1
+echo ""
+echo "Pushing and checking out master:"
+echo ""
 git push -u origin gh-pages || exit 1
 git checkout "master" || exit 1
 
