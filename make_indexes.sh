@@ -17,6 +17,7 @@ for DIR in releases libraries ; do
   echo "Deleting files:"
   echo ""
   find "${DIR}" -type f -name index.html -print -delete
+  find "${DIR}" -type d  -empty -print -delete
   echo ""
   echo "Creating files:"
   echo ""
