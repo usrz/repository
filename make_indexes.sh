@@ -28,6 +28,8 @@ for DIR in releases ; do
   git add "${DIR}"
 done
 
+git config user.email "builds@circleci.com"
+git config user.name "CircleCI Buil Agent"
 git commit -a -m "Built new indexes"
 git push -u origin gh-pages
 git checkout "master"
