@@ -6,7 +6,7 @@ git checkout "gh-pages" || exit 1
 git merge "master" -m "Building new indexes" || exit 1
 
 OLD_DIR=`pwd`;
-for DIR in releases ; do
+for DIR in releases libraries ; do
   find "${DIR}" -type f -name index.html -delete
   find "${DIR}" -type d | while read NEW_DIR ; do
     cd "${NEW_DIR}"
@@ -21,7 +21,7 @@ for DIR in releases ; do
       echo "    <ul>"
       echo "      <li class=\"up\"><a href=\"..\">..</a></li>"
       for FILE in `ls -1` ; do
-        if test "${FILE}" = "index.html" ; then
+        if [[ $FILE == "index.html" ]] || [[ $FILE == .* ]] ; then
           continue
         fi
         if test -d "$FILE" ; then
