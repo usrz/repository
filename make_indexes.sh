@@ -19,8 +19,19 @@ for DIR in releases ; do
       echo "  <body>"
       echo "    <h1>Index of: ${NEW_DIR}</h1>"
       echo "    <ul>"
-      echo "      <li><a href=\"..\">..</a></li>"
-    printf "      <li><a href=\"%s\">%s</a></li>" "${NEW_DIR}" "${NEW_DIR}"
+      echo "      <li class=\"up\"><a href=\"..\">..</a></li>"
+      for FILE in `ls -1` ; do
+        if test "${FILE}" = "index.html" ; then
+          continue
+        fi
+        if test -d "$FILE" ; then
+          FILE="${FILE}/"
+          CLASS="dir"
+        else
+          CLASS="file"
+        fi
+        printf "      <li class=\"%s\"><a href=\"%s\">%s</a></li>\n" "${CLASS}" "${FILE}" "${FILE}"
+      done
       echo "    </ul>"
       echo "  </body>"
       echo "</html>"
