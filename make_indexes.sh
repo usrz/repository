@@ -30,7 +30,7 @@ for DIR in releases ; do
   git add "${DIR}" || exit 1
 done
 
-git commit -a -m "Built new indexes" || exit 1
+git commit --allow-empty -a -m "Built new indexes" || exit 1
 git push -u origin gh-pages || exit 1
 git checkout "master" || exit 1
 
