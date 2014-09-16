@@ -1,3 +1,7 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
 test:
   override:
     - bash verify_ivy.sh
