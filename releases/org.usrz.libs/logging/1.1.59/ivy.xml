@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="logging" revision="1.1.59" status="release" publication="20140916184135"/>
+<configurations>
+<conf name="default" visibility="public"/>
+</configurations>
+<publications>
+<artifact name="logging" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-logging/releases/download/1.1.59/classes-1.1.59.jar"/>
+<artifact name="logging" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-logging/releases/download/1.1.59/sources-1.1.59.zip"/>
+<artifact name="logging" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-logging/releases/download/1.1.59/javadoc-1.1.59.zip"/>
+</publications>
+<dependencies>
+<dependency org="org.slf4j" name="slf4j-api" rev="1.7.7" revConstraint="latest.release" conf="default"/>
+</dependencies>
+</ivy-module>
