@@ -5,7 +5,7 @@ set -xv
 git config user.email "builds@circleci.com"
 git config user.name "CircleCI Buil Agent"
 git checkout "gh-pages"
-git merge "master"
+git merge "master" -m "Building new indexes"
 
 OLD_DIR=`pwd`;
 for DIR in releases ; do
