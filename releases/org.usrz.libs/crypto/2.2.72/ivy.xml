@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="crypto" revision="2.2.72" status="release" publication="20140916191736"/>
+<configurations>
+<conf name="default" visibility="public"/>
+</configurations>
+<publications>
+<artifact name="crypto" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-crypto/releases/download/2.2.72/classes-2.2.72.jar"/>
+<artifact name="crypto" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-crypto/releases/download/2.2.72/sources-2.2.72.zip"/>
+<artifact name="crypto" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-crypto/releases/download/2.2.72/javadoc-2.2.72.zip"/>
+</publications>
+<dependencies>
+<dependency org="org.usrz.libs" name="configurations" rev="1.2.48" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="utils" rev="2.1.141" revConstraint="latest.release" conf="default"/>
+<dependency org="org.bouncycastle" name="bcprov" rev="1.51" revConstraint="latest.release" conf="default"/>
+<dependency org="org.bouncycastle" name="bcpkix" rev="1.51" revConstraint="latest.release" conf="default"/>
+<dependency org="com.fasterxml" name="jackson-databind" rev="2.4.2" revConstraint="latest.release" conf="default"/>
+<dependency org="com.google" name="guava" rev="18.0" revConstraint="latest.release" conf="default"/>
+</dependencies>
+</ivy-module>
