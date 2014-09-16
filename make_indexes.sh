@@ -1,11 +1,9 @@
 #!/bin/bash
 
-set -xv
-
-git config user.email "builds@circleci.com"
-git config user.name "CircleCI Buil Agent"
-git checkout "gh-pages"
-git merge "master" -m "Building new indexes"
+git config user.email "builds@circleci.com" || exit 1
+git config user.name "CircleCI Buil Agent" || exit 1
+git checkout "gh-pages" || exit 1
+git merge "master" -m "Building new indexes" || exit 1
 
 OLD_DIR=`pwd`;
 for DIR in releases ; do
@@ -29,10 +27,10 @@ for DIR in releases ; do
     } > index.html
     cd "${OLD_DIR}"
   done
-  git add "${DIR}"
+  git add "${DIR}" || exit 1
 done
 
-git commit -a -m "Built new indexes"
-git push -u origin gh-pages
-git checkout "master"
+git commit --allow-empty -a -m "Built new indexes" || exit 1
+git push -u origin gh-pages || exit 1
+git checkout "master" || exit 1
 
