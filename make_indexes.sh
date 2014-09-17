@@ -1,14 +1,5 @@
 #!/bin/bash
 
-git config user.email "builds@circleci.com" || exit 1
-git config user.name "CircleCI Buil Agent" || exit 1
-
-echo ""
-echo "Checking out gh-pages and merging:"
-echo ""
-git checkout "gh-pages" || exit 1
-git merge "master" -m "Building new indexes" || exit 1
-
 OLD_DIR=`pwd`;
 for DIR in releases libraries ; do
   echo ""
@@ -57,14 +48,3 @@ for DIR in releases libraries ; do
   echo ""
   git add --verbose "${DIR}" || exit 1
 done
-
-echo ""
-echo "Committing:"
-echo ""
-git commit --verbose --allow-empty -a -m "Built new indexes" || exit 1
-echo ""
-echo "Pushing and checking out master:"
-echo ""
-git push -u origin gh-pages || exit 1
-git checkout "master" || exit 1
-
