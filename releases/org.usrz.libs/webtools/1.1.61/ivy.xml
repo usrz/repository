@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="webtools" revision="1.1.61" status="release" publication="20140917061338"/>
+<configurations>
+<conf name="default" visibility="public"/>
+</configurations>
+<publications>
+<artifact name="webtools" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-webtools/releases/download/1.1.61/classes-1.1.61.jar"/>
+<artifact name="webtools" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-webtools/releases/download/1.1.61/sources-1.1.61.zip"/>
+<artifact name="webtools" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-webtools/releases/download/1.1.61/javadoc-1.1.61.zip"/>
+</publications>
+<dependencies>
+<dependency org="javax" name="ws-rs" rev="2.0.1" revConstraint="latest.release" conf="default"/>
+<dependency org="javax" name="validation" rev="1.1.0" revConstraint="latest.release" conf="default"/>
+<dependency org="com.github" name="mustache" rev="0.8.16" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="utils" rev="2.1.143" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="logging" rev="1.1.65" revConstraint="latest.release" conf="default"/>
+</dependencies>
+</ivy-module>
