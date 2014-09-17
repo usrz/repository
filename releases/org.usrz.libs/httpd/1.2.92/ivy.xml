@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="httpd" revision="1.2.92" status="release" publication="20140917060555"/>
+<configurations>
+<conf name="default" visibility="public"/>
+</configurations>
+<publications>
+<artifact name="httpd" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-httpd/releases/download/1.2.92/classes-1.2.92.jar"/>
+<artifact name="httpd" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-httpd/releases/download/1.2.92/sources-1.2.92.zip"/>
+<artifact name="httpd" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-httpd/releases/download/1.2.92/javadoc-1.2.92.zip"/>
+</publications>
+<dependencies>
+<dependency org="org.usrz.libs" name="utils" rev="2.1.143" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="crypto" rev="2.2.74" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="logging" rev="1.1.65" revConstraint="latest.release" conf="default"/>
+<dependency org="com.google" name="guice" rev="4.0-beta4" revConstraint="latest.release" conf="default"/>
+<dependency org="org.glassfish" name="grizzly-http-server" rev="2.3.16" revConstraint="latest.release" conf="default"/>
+<dependency org="org.glassfish" name="jersey-grizzly" rev="2.12" revConstraint="latest.release" conf="default"/>
+<dependency org="com.fasterxml" name="jackson-jaxrs-provider" rev="2.4.2" revConstraint="latest.release" conf="default"/>
+<dependency org="com.fasterxml" name="jackson-databind" rev="2.4.2" revConstraint="latest.release" conf="default"/>
+<dependency org="com.fasterxml" name="jackson-guice" rev="2.4.1" revConstraint="latest.release" conf="default"/>
+</dependencies>
+</ivy-module>
