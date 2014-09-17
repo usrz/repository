@@ -1,6 +1,9 @@
 #!/bin/bash
 
-DETAILS="`git log -1 --format=format:'<b>Commit:</b> <i>%H</i><br /><b>Date:</b> <i>%ai</i><br /><b>Author:</b> <i>%an &lt;%ae&gt;</i>'`"
+DETAILS="Built by `whoami` on `hostname -f` at `date -u`"
+if test -n "${CIRCLE_BUILD_NUM}" ; then
+  DETAILS="${DETAILS} (CircleCi ${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME} build ${CIRCLE_BUILD_NUM})"
+fi
 
 # Traverse our directory structure...
 OLD_DIR=`pwd`;
