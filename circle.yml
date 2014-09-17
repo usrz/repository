@@ -1,8 +1,0 @@
-test:
-  override:
-    - find . -type f -name ivy.xml | xargs xmllint --noout --schema http://ant.apache.org/ivy/schemas/ivy.xsd
-deployment:
-  master:
-    branch: master
-    commands:
-      - ssh circleci@gw.usrz.com update libraries
