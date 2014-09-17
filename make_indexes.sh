@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DETAILS="`git log -1 --format=format:'<b>Commit:</b> <i>%H</i><br /><b>Date:</b> <i>%ai</i><br /><b>Author:</b> <i>%an &lt;%ae&gt;</i>'`"
+
+# Traverse our directory structure...
 OLD_DIR=`pwd`;
 for DIR in releases libraries ; do
   echo ""
@@ -38,6 +41,7 @@ for DIR in releases libraries ; do
         printf "      <li class=\"%s\"><a href=\"%s\">%s</a></li>\n" "${CLASS}" "${FILE}" "${FILE}"
       done
       echo "    </ul>"
+      echo "    <p style=\"font-size: 70%\">${DETAILS}</p>"
       echo "  </body>"
       echo "</html>"
     } > index.html
@@ -48,3 +52,22 @@ for DIR in releases libraries ; do
   echo ""
   git add --verbose "${DIR}" || exit 1
 done
+
+# Finally create our index...
+cat > index.html << EOF
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Repository Home</title>
+  </head>
+  <body>
+    <h1>Repository Home</h1>
+    <ul>
+      <li class="dir"><a href="libraries">libraries/</a></li>
+      <li class="dir"><a href="releases">releases/</a></li>
+    </ul>
+    <p style="font-size: 70%">${DETAILS}</p>
+  </body>
+</html>
+EOF
+git add --verbose "index.html" || exit 1
