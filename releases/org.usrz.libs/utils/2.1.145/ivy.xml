@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0">
+<info organisation="org.usrz.libs" module="utils" revision="2.1.145" status="release" publication="20140924075719"/>
+<configurations>
+<conf name="default" visibility="public"/>
+</configurations>
+<publications>
+<artifact name="utils" type="bin" ext="jar" conf="default" url="https://github.com/usrz/java-libs-utils/releases/download/2.1.145/classes-2.1.145.jar"/>
+<artifact name="utils" type="src" ext="zip" conf="default" url="https://github.com/usrz/java-libs-utils/releases/download/2.1.145/sources-2.1.145.zip"/>
+<artifact name="utils" type="doc" ext="zip" conf="default" url="https://github.com/usrz/java-libs-utils/releases/download/2.1.145/javadoc-2.1.145.zip"/>
+</publications>
+<dependencies>
+<dependency org="org.usrz.libs" name="logging" rev="1.1.65" revConstraint="latest.release" conf="default"/>
+<dependency org="org.usrz.libs" name="configurations" rev="1.2.52" revConstraint="latest.release" conf="default"/>
+<dependency org="com.google" name="guava" rev="18.0" revConstraint="latest.release" conf="default"/>
+<dependency org="com.google" name="guice" rev="4.0-beta4" revConstraint="latest.release" conf="default"/>
+</dependencies>
+</ivy-module>
