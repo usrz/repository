@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.fasterxml"
+        module="jackson-databind"
+        revision="2.5.1"
+        publication="20150207091045"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://github.com/FasterXML/jackson">
+      jackson-databind
+    </description>
+
+    <e:maven id="com.fasterxml.jackson.core#jackson-databind#2.5.1"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jackson-databind" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1.jar"/>
+    <artifact name="jackson-databind" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1-sources.jar"/>
+    <artifact name="jackson-databind" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.fasterxml" name="jackson-annotations" rev="2.5.1"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-annotations#2.5.0" mapped="com.fasterxml.jackson.core#jackson-annotations#2.5.1" -->
+    <dependency org="com.fasterxml" name="jackson-core" rev="2.5.1"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-core#2.5.1" -->
+
+    <!-- dependency maven="cglib#cglib#2.2.2" org="net.sf.cglib" name="cglib" rev="2.2.2" conf="test" -->
+    <!-- dependency maven="javax.measure#jsr-275#0.9.2" conf="test" -->
+    <!-- dependency maven="junit#junit#4.11" conf="test" -->
+    <!-- dependency maven="org.codehaus.groovy#groovy#1.7.9" conf="test" -->
+    <!-- dependency maven="org.hibernate#hibernate-cglib-repack#2.1_3" conf="test" -->
+  </dependencies>
+
+</ivy-module>
