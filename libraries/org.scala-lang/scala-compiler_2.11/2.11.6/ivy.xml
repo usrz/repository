@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.scala-lang"
+        module="scala-compiler_2.11"
+        revision="2.11.6"
+        publication="20150226100127"
+        status="release">
+
+    <!-- http://www.scala-lang.org/license.html -->
+    <license name="BSD 3-Clause License"
+             url="http://opensource.org/licenses/bsd-3-clause"/>
+
+    <description homepage="http://www.scala-lang.org/">
+      Scala Compiler
+    </description>
+
+    <e:maven id="org.scala-lang#scala-compiler#2.11.6"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="scala-compiler_2.11" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.6/scala-compiler-2.11.6.jar"/>
+    <artifact name="scala-compiler_2.11" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.6/scala-compiler-2.11.6-sources.jar"/>
+    <artifact name="scala-compiler_2.11" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.6/scala-compiler-2.11.6-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.scala-lang" name="scala-reflect_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-reflect#2.11.6" -->
+    <dependency org="org.scala-lang" name="scala-xml_2.11" rev="1.0.3"/> <!-- maven requested="org.scala-lang.modules#scala-xml_2.11#1.0.3" -->
+    <dependency org="org.scala-lang" name="scala-parser-combinators_2.11" rev="1.0.3"/> <!-- maven requested="org.scala-lang.modules#scala-parser-combinators_2.11#1.0.3" -->
+    <dependency org="org.scala-lang" name="scala-library_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-library#2.11.6" -->
+
+    <!-- dependency maven="jline#jline#2.12.1" conf="compile,optional" -->
+  </dependencies>
+
+</ivy-module>

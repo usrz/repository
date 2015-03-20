@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.scala-lang"
+        module="scala-parser-combinators_2.11"
+        revision="1.0.3"
+        publication="20141215092104"
+        status="release">
+
+    <!-- http://opensource.org/licenses/BSD-3-Clause -->
+    <license name="BSD 3-Clause License"
+             url="http://opensource.org/licenses/bsd-3-clause"/>
+
+    <description homepage="http://www.scala-lang.org/">
+      scala-parser-combinators
+    </description>
+
+    <e:maven id="org.scala-lang.modules#scala-parser-combinators_2.11#1.0.3"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="scala-parser-combinators_2.11" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.jar"/>
+    <artifact name="scala-parser-combinators_2.11" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3-sources.jar"/>
+    <artifact name="scala-parser-combinators_2.11" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.scala-lang" name="scala-library_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-library#2.11.2" mapped="org.scala-lang#scala-library#2.11.6" -->
+
+    <!-- dependency maven="com.novocode#junit-interface#0.10" conf="test" -->
+    <!-- dependency maven="junit#junit#4.11" conf="test" -->
+  </dependencies>
+
+</ivy-module>
