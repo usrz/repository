@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.wordnik"
+        module="swagger-annotations"
+        revision="1.5.2-m1"
+        publication="20150224151805"
+        status="release">
+
+    <!-- http://www.apache.org/licenses/LICENSE-2.0.html -->
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="https://github.com/wordnik/swagger-core">
+      swagger-annotations
+    </description>
+
+    <e:maven id="com.wordnik#swagger-annotations#1.5.2-M1"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="swagger-annotations" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/wordnik/swagger-annotations/1.5.2-M1/swagger-annotations-1.5.2-M1.jar"/>
+    <artifact name="swagger-annotations" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/wordnik/swagger-annotations/1.5.2-M1/swagger-annotations-1.5.2-M1-sources.jar"/>
+    <artifact name="swagger-annotations" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/wordnik/swagger-annotations/1.5.2-M1/swagger-annotations-1.5.2-M1-javadoc.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>
