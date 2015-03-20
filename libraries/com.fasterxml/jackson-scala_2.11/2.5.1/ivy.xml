@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="com.fasterxml"
+        module="jackson-scala_2.11"
+        revision="2.5.1"
+        publication="20150212150313"
+        status="release">
+
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="http://wiki.fasterxml.com/JacksonModuleScala">
+      jackson-module-scala
+    </description>
+
+    <e:maven id="com.fasterxml.jackson.module#jackson-module-scala_2.11#2.5.1"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jackson-scala_2.11" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.5.1/jackson-module-scala_2.11-2.5.1.jar"/>
+    <artifact name="jackson-scala_2.11" type="src" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.5.1/jackson-module-scala_2.11-2.5.1-sources.jar"/>
+    <artifact name="jackson-scala_2.11" type="doc" ext="zip" url="http://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.5.1/jackson-module-scala_2.11-2.5.1-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="com.fasterxml" name="jackson-annotations" rev="2.5.1"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-annotations#2.5.1" -->
+    <dependency org="com.fasterxml" name="jackson-core" rev="2.5.1"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-core#2.5.1" -->
+    <dependency org="com.fasterxml" name="jackson-databind" rev="2.5.1"/> <!-- maven requested="com.fasterxml.jackson.core#jackson-databind#2.5.1" -->
+    <dependency org="com.thoughtworks" name="paranamer" rev="2.6"/> <!-- maven requested="com.thoughtworks.paranamer#paranamer#2.6" -->
+    <dependency org="org.scala-lang" name="scala-library_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-library#2.11.4" mapped="org.scala-lang#scala-library#2.11.6" -->
+    <dependency org="org.scala-lang" name="scala-reflect_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-reflect#2.11.4" mapped="org.scala-lang#scala-reflect#2.11.6" -->
+
+    <!-- dependency maven="com.fasterxml.jackson.datatype#jackson-datatype-guava#2.5.1" org="com.fasterxml" name="jackson-datatype-guava" rev="2.5.1" conf="test" -->
+    <!-- dependency maven="com.fasterxml.jackson.datatype#jackson-datatype-joda#2.5.1" org="com.fasterxml" name="jackson-datatype-joda" rev="2.5.1" conf="test" -->
+    <!-- dependency maven="com.fasterxml.jackson.module#jackson-module-jsonSchema#2.5.1" org="com.fasterxml" name="jackson-json-schema" rev="2.5.1" conf="test" -->
+    <!-- dependency maven="junit#junit#4.11" conf="test" -->
+    <!-- dependency maven="org.scalatest#scalatest_2.11#2.2.1" conf="test" -->
+  </dependencies>
+
+</ivy-module>
