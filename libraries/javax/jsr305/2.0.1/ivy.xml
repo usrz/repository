@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="javax"
+        module="jsr305"
+        revision="2.0.1"
+        publication="20120730071801"
+        status="release">
+
+    <!-- http://www.gnu.org/licenses/lgpl.html -->
+    <license name="GNU Lesser General Public License"
+             url="http://www.gnu.org/licenses/lgpl.txt"/>
+
+    <description homepage="http://findbugs.sourceforge.net/">
+      FindBugs-Annotations
+    </description>
+
+    <e:maven id="com.google.code.findbugs#annotations#2.0.1"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="jsr305" type="bin" ext="jar" url="http://repo1.maven.org/maven2/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar"/>
+  </publications>
+
+  <dependencies/>
+
+</ivy-module>
