@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.json4s"
+        module="json4s-ext_2.11"
+        revision="3.2.11"
+        publication="20141024101127"
+        status="release">
+
+    <!-- http://github.com/json4s/json4s/raw/HEAD/LICENSE -->
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="https://github.com/json4s/json4s">
+      json4s-ext
+    </description>
+
+    <e:maven id="org.json4s#json4s-ext_2.11#3.2.11"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="json4s-ext_2.11" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/json4s/json4s-ext_2.11/3.2.11/json4s-ext_2.11-3.2.11.jar"/>
+    <artifact name="json4s-ext_2.11" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/json4s/json4s-ext_2.11/3.2.11/json4s-ext_2.11-3.2.11-sources.jar"/>
+    <artifact name="json4s-ext_2.11" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/json4s/json4s-ext_2.11/3.2.11/json4s-ext_2.11-3.2.11-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.joda" name="convert" rev="1.7"/> <!-- maven requested="org.joda#joda-convert#1.6" mapped="org.joda#joda-convert#1.7" -->
+    <dependency org="org.joda" name="time" rev="2.3"/> <!-- maven requested="joda-time#joda-time#2.3" -->
+    <dependency org="org.scala-lang" name="scala-library_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-library#2.11.0" mapped="org.scala-lang#scala-library#2.11.6" -->
+
+    <!-- dependency maven="org.json4s#json4s-native_2.11#3.2.11" conf="test" -->
+  </dependencies>
+
+</ivy-module>

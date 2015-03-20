@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:e="http://ant.apache.org/ivy/extra"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.json4s"
+        module="json4s-ast_2.11"
+        revision="3.2.11"
+        publication="20141024101004"
+        status="release">
+
+    <!-- http://github.com/json4s/json4s/raw/HEAD/LICENSE -->
+    <license name="Apache Software License, Version 2.0"
+             url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+
+    <description homepage="https://github.com/json4s/json4s">
+      json4s-ast
+    </description>
+
+    <e:maven id="org.json4s#json4s-ast_2.11#3.2.11"/>
+  </info>
+
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+
+  <publications>
+    <artifact name="json4s-ast_2.11" type="bin" ext="jar" url="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar"/>
+    <artifact name="json4s-ast_2.11" type="src" ext="zip" url="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-sources.jar"/>
+    <artifact name="json4s-ast_2.11" type="doc" ext="zip" url="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-javadoc.jar"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.scala-lang" name="scala-library_2.11" rev="2.11.6"/> <!-- maven requested="org.scala-lang#scala-library#2.11.0" mapped="org.scala-lang#scala-library#2.11.6" -->
+  </dependencies>
+
+</ivy-module>
